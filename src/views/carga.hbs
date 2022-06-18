@@ -1,0 +1,101 @@
+<div class="bg-secondary bg-gradient mt-4 pb-3"> 
+    <h1 class="text-center ">alta de producto</h1>
+
+
+    <div class="ms-4 me-4">
+
+          <div class="mt-5 mb-4  ">
+
+             <form method="POST" action="/create/articulo" > 
+ 
+             <div class="row">
+                 <div class="col-md-3">
+                 <label class="col-md-2" for="nombre">Nombre</label>
+                 <input type="text" class="form-control col-md-4" name="nombre" id="nombre" required>
+                 </div>
+ 
+                 <div class="col-md-3">   
+                     <label class="col-md-2" for="categoria">Categoria</label>
+                     <select class="form-control col-md-4" name="categoria" id="categoria" required>
+                         <option value="-1" selected></option>
+                         <option value="0">Informatica</option>
+                         <option value="1">Comestible</option>
+                         <option value="2">Limpieza</option>
+                     </select>
+ 
+                 </div>
+ 
+                 <div class="col-md-3">    
+                     <label for="cantidad">Cantidad</label>
+                     <input type="number" class="form-control" name="cantidad" id="cantidad" required>
+                 </div>
+                 <div class="col-md-3">
+                     <label for="reposicion">Punto de Reposicion</label>
+                     <input type="number" class="form-control" name="reposicion" id="reposicion" required> 
+                 </div>
+                 <button type="submit" class="btn btn-dark mt-4">cargar</button>
+
+
+
+
+                    
+
+             </div>
+             </form>
+             </div>
+ 
+ 
+
+            <div>
+             <div class="tb-tools">
+             <button class="btn btn-dark mt-5 mb-4" id="btnFormulario" onclick="MostrarOcultar()">Ocultar</button>
+                                             <!-- Tabla -->
+                                             <div id="dv-table">
+                                                 <table class="table table-dark">
+                                                     <thead>
+                                                         <tr class="table-dark">
+                                                         
+                                                             <th scope="col">Nombre</th>
+                                                             <th scope="col">Categoria</th>
+                                                             <th scope="col">Cantidad</th>
+                                                         </tr>
+                                                     </thead>
+                                         
+                                                     <tbody>
+                                                         <tr class="table-success">
+                                                             
+                                                             <td>teclado genius</td>
+                                                             <td>Informatica</td>
+                                                             <td>5</td>
+                                                         </tr>
+                                                         <tr class="table-warning">
+
+                                                             <td>toner samsung 2080</td>
+                                                             <td>Informatica</td>
+                                                             <td>3</td>
+                                                         </tr>
+                                                         <tr class="table-danger">
+
+                                                             <td>toner hp 1006</td>
+                                                             <td>Informatica</td>
+                                                             <td>1</td>
+                                                         </tr>
+
+                                                         <tr class="table-success">
+
+                                                             <td>lavandina</td>
+                                                             <td>Limpieza</td>
+                                                             <td>15</td>
+                                                         </tr>
+
+                                                     </tbody>
+                                                 </table>
+                                             </div>
+                                     </div >
+     
+ 
+                 </div>
+        </div>
+
+
+    </div>
